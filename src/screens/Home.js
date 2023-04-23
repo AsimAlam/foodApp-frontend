@@ -12,6 +12,7 @@ export default function Home() {
 
   const loadData = async () => {
     let response = await fetch("https://fastfood-api.onrender.com/api/foodData", {
+      mode: 'no-cors',
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
